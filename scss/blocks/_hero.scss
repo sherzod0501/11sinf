@@ -1,0 +1,17 @@
+.hero {
+
+
+    &__main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+    &__left__img{
+        width: 300px;
+    }
+
+    &__right__img {
+        width: 300px;
+    }
+}

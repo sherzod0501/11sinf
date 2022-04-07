@@ -1,5 +1,5 @@
 .hero {
-
+background-color: blueviolet;
 
     &__main {
     display: flex;
@@ -8,10 +8,50 @@
     }
 
     &__left__img{
-        width: 220px;
+        width: 550px;
+        border: 2px solid #000000;
+    }
+    &__left__img:hover {
+        border: none;
+        box-shadow: rgba(255, 255, 255, 0.3) 0px 0px 0px 10px;
     }
 
     &__right__img {
-        width: 220px;
+        width: 550px;
+        border: 2px solid #000000;
     }
+    &__right__img:hover {
+        border: none;
+        box-shadow: rgba(255, 255, 255, 0.3) 0px 0px 0px 10px;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .hero {
+        background-color: blueviolet;
+        
+            &__main {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            }
+        
+            &__left__img{
+                width: 220px;
+                border: 1px solid #000000;
+            }
+            &__left__img:hover {
+                border: none;
+                box-shadow: rgba(255, 255, 255, 0.3) 0px 0px 0px 5px;
+            }
+        
+            &__right__img {
+                width: 220px;
+                border: 1px solid #000000;
+            }
+            &__right__img:hover {
+                border: none;
+                box-shadow: rgba(255, 255, 255, 0.3) 0px 0px 0px 5px;
+            }
+        }
 }
